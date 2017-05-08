@@ -40,7 +40,6 @@ module.exports = function(app) {
         // It will do this by sending out the value "true" have a table
         var bestFriend, bestFriendScore = Number.MAX_VALUE;
 
-        friendsArr.push(req.body);
         var myScores = req.body.scores;
         for (var i = 0; i < friendsArr.length; i++) {
             var total = 0;
@@ -58,6 +57,8 @@ module.exports = function(app) {
             }
 
         }
+        friendsArr.push(req.body);
+
         // console.log(bestFriend);
         res.json(bestFriend);
     });
