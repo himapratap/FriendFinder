@@ -13,8 +13,7 @@ var bodyParser = require("body-parser");
 
 // Tells node that we are creating an "express" server
 var app = express();
-var cool = require('cool-ascii-faces');
-
+var path = require("path");
 
 // Sets an initial port. We"ll use this later in our listener
 var PORT = process.env.PORT || 8080;
@@ -26,6 +25,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
+app.use( express.static(path.join(__dirname, '/app/public')))
+
+console.log(path.join(__dirname, '/app/public'));
 // ================================================================================
 // ROUTER
 // The below points our server to a series of "route" files.

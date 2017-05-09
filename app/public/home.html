@@ -3,30 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Tables Page</title>
+    <title>Friends</title>
+    <link rel="stylesheet" type="text/css" href="css/ff.css">
+
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/b737f59232.js"></script>
 
 </head>
 
 <body>
 
     <div class="container">
-
-        <div class="jumbotron">
-            <h1><span class="glyphicon glyphicon-facetime-video"></span> Friend Finder</h1>
+        <div class="jumbotron content text-center">
+            <h1><strong> <i class="fa fa-handshake-o" aria-hidden="true"></i></span> Friend Finder </strong></h1>
             <hr>
             <h2>Answer a few basic questions.</h2>
             <h2>Then find the friend with the greatest compatibility!</h2>
             <br>
-            <a href="/survey"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</button></a>
-
+            <a href="/survey"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span> Take Survey</button></a>
+            <hr>
+            <div class="container">
+                <p class="link text-right"><a href="/api/friends">API Friends List</a> | <a href="https://github.com/himapratap/FriendFinder">GitHub Repo</a> </p>
+            </div>
         </div>
 
         <footer class="footer">
             <div class="container">
-                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/himapratap/FriendFinder">GitHub Repo</a> </p>
+                <p class='text-right'><a href="/api/friends">API Friends List</a> | <a href="https://github.com/himapratap/FriendFinder">GitHub Repo</a> </p>
             </div>
         </footer>
 
